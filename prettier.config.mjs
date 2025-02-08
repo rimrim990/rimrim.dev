@@ -6,8 +6,8 @@
  */
 const config = {
     trailingComma: "es5",
-    tabWidth: 4,
-    printWidth: 120,
+    tabWidth: 2,
+    printWidth: 100,
     semi: false,
     singleQuote: true,
 };
