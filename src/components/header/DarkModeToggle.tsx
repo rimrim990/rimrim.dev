@@ -4,7 +4,6 @@ import { Moon, Sun } from 'lucide-react'
 
 export default function DarkModeToggle() {
   const { theme, setTheme } = useTheme()
-  console.log(theme)
 
   const handleToggle = () => {
     switch (theme) {
@@ -18,7 +17,12 @@ export default function DarkModeToggle() {
   }
 
   return (
-    <Toggle variant="outline" aria-label="Toggle theme" onClick={handleToggle}>
+    <Toggle
+      variant="outline"
+      aria-label="Toggle theme"
+      onClick={handleToggle}
+      className="flex-grow-0"
+    >
       <Sun className="absolute scale-0 dark:scale-100" />
       <Moon className="scale-100 dark:scale-0" />
     </Toggle>
