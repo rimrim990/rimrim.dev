@@ -6,7 +6,7 @@ import Logo from '@/components/header/Logo'
 
 export default function Header() {
   return (
-    <header className="bg-transparent h-16 flex items-center px-5 justify-start">
+    <header className="bg-transparent h-16 flex items-center px-12 justify-start">
       <Logo />
       <GNB />
       <DarkModeToggle />
