@@ -11,10 +11,10 @@ export default function Home() {
   const tags = posts.map((post) => post.tag)
 
   return (
-    <main className="px-12">
+    <>
       <Tags tags={tags} />
       <RecentPostList posts={recent} />
       <PostList posts={rest} />
-    </main>
+    </>
   )
 }

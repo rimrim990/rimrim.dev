@@ -1,5 +1,6 @@
 import { Post } from '@/types'
 import PostItem from '@/app/Post'
+import Title from '@/components/Title'
 
 interface Props {
   posts: Post[]
@@ -8,7 +9,7 @@ interface Props {
 export default function RecentPostList({ posts }: Props) {
   return (
     <div>
-      <h3 className="text-3xl font-bold my-4">Recent Posts</h3>
+      <Title>Recent Posts</Title>
       <ul className="flex" style={{ gap: '4rem' }}>
         {posts.map((post) => (
           <PostItem key={post.id} post={post} />
