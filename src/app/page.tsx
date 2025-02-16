@@ -1,11 +1,17 @@
-import {posts} from "@/data/dummy";
-import PostList from "@/PostList";
+import { posts } from '@/data/dummy'
+import PostList from '@/app/PostList'
+import RecentPostList from '@/app/RecentPostList'
+
+const RECENT_ITEM_COUNT = 1
 
 export default function Home() {
-    return (
-        <main className="px-12">
-            <h3 className="text-3xl font-bold my-4">Posts</h3>
-            <PostList posts={posts}/>
-        </main>
-    )
+  const recent = posts.slice(0, RECENT_ITEM_COUNT)
+  const rest = posts.slice(RECENT_ITEM_COUNT)
+
+  return (
+    <main className="px-12">
+      <RecentPostList posts={recent} />
+      <PostList posts={rest} />
+    </main>
+  )
 }
