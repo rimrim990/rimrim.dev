@@ -7,7 +7,7 @@ interface Props {
 
 export default function PostList({ posts }: Props) {
   return (
-    <div>
+    <div className="my-20">
       <h3 className="text-3xl font-bold my-4">Posts</h3>
       <ul
         className="grid grid-cols-3 gap-16"

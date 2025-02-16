@@ -7,7 +7,7 @@ interface Props {
 
 export default function RecentPostList({ posts }: Props) {
   return (
-    <div className="my-20">
+    <div>
       <h3 className="text-3xl font-bold my-4">Recent Posts</h3>
       <ul className="flex" style={{ gap: '4rem' }}>
         {posts.map((post) => (

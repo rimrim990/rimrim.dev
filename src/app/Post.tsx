@@ -7,7 +7,7 @@ interface Props {
 export default function PostItem({ post }: Props) {
   return (
     <li>
-      <a>
+      <a href={`/posts/${post.id}`}>
         <div className="flex border-solid bolrder-1 rounded-md max-h-52">
           <img
             src="https://dummyimage.com/600x400/61bf85/fff"
