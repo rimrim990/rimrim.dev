@@ -1,6 +1,5 @@
 import { Post } from '@/types'
 import PostItem from '@/app/Post'
-import Title from '@/components/Title'
 
 interface Props {
   posts: Post[]
@@ -8,12 +7,8 @@ interface Props {
 
 export default function PostList({ posts }: Props) {
   return (
-    <div>
-      <Title>Posts</Title>
-      <ul
-        className="grid grid-cols-3 gap-16"
-        style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4rem' }}
-      >
+    <div className="max-w-3xl px-6 border-r">
+      <ul className="flex flex-col">
         {posts.map((post) => (
           <PostItem key={post.id} post={post} />
         ))}
