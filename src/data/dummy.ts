@@ -1,7 +1,7 @@
 import { Post } from '@/types'
 
 export const posts: Post[] = Array.from({ length: 20 }).map((_, idx) => ({
-  id: idx.toString(),
+  id: `post-render-test-${idx}`,
   tag: `test-tag-${idx}`,
   title: `Test-Title-${idx}-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
   subTitle: `서브 타이틀입니다. 컨텐츠 정보의 미리보기 영역입니다.`,
