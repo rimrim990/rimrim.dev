@@ -4,7 +4,7 @@ import {cn} from "@/lib/utils";
 export default function GNB() {
     return (
         <Navigation>
-            <NavigationItem href="#" className="">홈</NavigationItem>
+            <NavigationItem href="/" className="">홈</NavigationItem>
             <NavigationItem href="#">프론트엔드</NavigationItem>
             <NavigationItem href="#">백엔드</NavigationItem>
             <NavigationItem href="#">컬처</NavigationItem>
