@@ -1,3 +1,3 @@
 export default function Logo() {
-  return <h1 className="flex-grow-0 font-bold text-2xl">RIMRIM.DEV</h1>
+  return <h1 className="text-[1.8rem]">Dev Insight</h1>
 }
