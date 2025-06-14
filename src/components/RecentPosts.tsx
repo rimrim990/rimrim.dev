@@ -1,4 +1,4 @@
-import Post from "@/app/Post";
+import Post from "@/components/Post";
 
 export default function RecentPosts() {
     return (

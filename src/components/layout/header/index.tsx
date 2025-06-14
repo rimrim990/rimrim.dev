@@ -1,5 +1,5 @@
-import GNB from '@/components/header/GNB'
-import Logo from '@/components/header/Logo'
+import GNB from '@/components/layout/header/GNB'
+import Logo from '@/components/layout/header/Logo'
 
 export default function Header() {
   return (

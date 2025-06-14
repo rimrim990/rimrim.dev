@@ -1,4 +1,4 @@
-import Category from "@/components/Category";
+import Category from "@/components/layout/sidebar/Category";
 
 export default function Sidebar() {
     return <aside className="flex-1">

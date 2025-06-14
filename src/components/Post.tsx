@@ -1,5 +1,3 @@
-
-
 export default function Post() {
     return (
         <div data-class="post"
@@ -12,3 +10,4 @@ export default function Post() {
         </div>
     )
 }
+
