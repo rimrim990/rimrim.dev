@@ -1,4 +1,4 @@
-import type { MDXComponents } from 'mdx/types'
+import type {MDXComponents} from 'mdx/types'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -14,7 +14,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     li: ({ children }) => <li className="mb-2 marker:text-[var(--primary)]">{children}</li>,
 
     blockquote: ({ children }) => <blockquote className="border-l-[var(--primary)] italic text-[#555] mx-0 my-8 pl-4 border-l-4 border-solid bg-[#fff7f1]">{children}</blockquote>,
-    code: ({ children }) => <code className="rounded text-[0.9rem] text-[var(--primary)] px-2 py-[0.2rem] bg-[#f4f4f4]">{children}</code>,
+    code: ({ children }) => <code className="hljs rounded text-[0.9rem] text-[var(--primary)] px-2 py-[0.2rem] bg-[#f4f4f4]">{children}</code>,
     pre: ({ children }) => <pre className="text-[#f8f8f2] overflow-x-auto text-[0.9rem] mx-0 my-8 p-4 rounded-lg bg-[#1e1e1e] [&_code]:text-inherit [&_code]:p-0 [&_code]:bg-none">{children}</pre>,
     ...components,
   }
