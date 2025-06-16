@@ -18,7 +18,7 @@ export default function Layout({children}: Readonly<{
                     {children}
                 </div>
 
-                <PageNavigation />
+                <PageNavigation/>
             </article>
         </main>
     )
