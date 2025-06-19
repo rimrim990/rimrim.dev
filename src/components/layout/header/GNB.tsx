@@ -1,5 +1,6 @@
 import {ComponentProps} from "react";
 import {cn} from "@/lib/utils";
+import Link from "next/link";
 
 export default function GNB() {
     return (
@@ -16,6 +17,6 @@ function Navigation({...props}: ComponentProps<'nav'>) {
     return <nav {...props} />
 }
 
-function NavigationItem({className, ...props}: ComponentProps<'a'>) {
-    return <a {...props} className={cn('no-underline font-medium ml-6 text-white ', className)}/>
+function NavigationItem({className, children, href}: ComponentProps<typeof Link>) {
+    return <Link href={href} className={cn('no-underline font-medium ml-6 text-white ', className)}>{children}</Link>
 }

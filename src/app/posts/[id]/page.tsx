@@ -17,7 +17,7 @@ export default async function Post({params}: Props) {
     const { id } = await params
 
     const MdxModule = dynamic(
-        () => import((`../../../markdown/${id}.mdx`))
+        () => import((`../../../markdown/${id}`))
     )
 
     return <MdxModule />

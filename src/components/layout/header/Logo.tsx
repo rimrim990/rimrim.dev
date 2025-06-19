@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 export default function Logo() {
     return (
         <h1 className="text-[1.8rem]">
-            <a href="/">Dev Insight</a>
+            <Link href="/">Dev Insight</Link>
         </h1>
     )
 }

@@ -1,5 +1,6 @@
 import {ComponentProps} from "react";
 import {cn} from "@/lib/utils";
+import Link from "next/link";
 
 export default function PageNavigation() {
     return (
@@ -10,8 +11,8 @@ export default function PageNavigation() {
     )
 }
 
-function PageNavigationItem({className, ...props}: ComponentProps<'a'>) {
+function PageNavigationItem({className, href, children}: ComponentProps<typeof Link>) {
     return (
-        <a href="#" className={cn("hover:underline", className)} {...props} />
+        <Link href={href} className={cn("hover:underline", className)}>{children}</Link>
     )
 }
