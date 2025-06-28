@@ -8,6 +8,12 @@ import langJs from 'highlight.js/lib/languages/javascript'
 const nextConfig: NextConfig = {
     /* config options here */
     pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+    images: {
+        remotePatterns: [{
+            protocol: 'https',
+            hostname: 'dummyimage.com',
+        }]
+    }
 }
 
 const withMDX = createMDX({
